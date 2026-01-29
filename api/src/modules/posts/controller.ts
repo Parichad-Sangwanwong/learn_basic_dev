@@ -1,7 +1,6 @@
 import { Elysia } from 'elysia'
 import { PostService } from './service'
 import { PostSchema } from './model'
-import { t } from 'elysia'
 
 export const postController = new Elysia({ prefix: '/posts' })
     .get('/', async () => {

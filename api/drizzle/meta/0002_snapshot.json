@@ -1,6 +1,6 @@
 {
-  "id": "c18326c8-9a46-4065-a32c-ec6871d9d19a",
-  "prevId": "6c2c8bb2-52e9-47ae-82cd-566498330258",
+  "id": "718d6030-6dd1-47d4-ab69-b4a05e06b09d",
+  "prevId": "ee3f52af-bcaa-4422-9747-d15dec61b656",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -37,22 +37,22 @@
           "primaryKey": false,
           "notNull": true
         },
-        "create_at": {
-          "name": "create_at",
+        "created_at": {
+          "name": "created_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"
         },
-        "update_at": {
-          "name": "update_at",
+        "updated_at": {
+          "name": "updated_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"
         },
-        "delete_at": {
-          "name": "delete_at",
+        "deleted_at": {
+          "name": "deleted_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false
@@ -105,22 +105,22 @@
           "primaryKey": false,
           "notNull": true
         },
-        "create_at": {
-          "name": "create_at",
+        "created_at": {
+          "name": "created_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"
         },
-        "update_at": {
-          "name": "update_at",
+        "updated_at": {
+          "name": "updated_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"
         },
-        "delete_at": {
-          "name": "delete_at",
+        "deleted_at": {
+          "name": "deleted_at",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": false

@@ -1,7 +1,6 @@
 import { Elysia } from 'elysia'
 import { UserService } from './service'
 import { UserSchema } from './model'
-import { t } from 'elysia'
 
 export const userController = new Elysia({ prefix: '/users' })
     .get('/:id', async ({ params: { id } }) => {

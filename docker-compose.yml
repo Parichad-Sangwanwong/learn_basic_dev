@@ -1,11 +1,12 @@
 services:
- postgres:
-   image: postgres:15.14-alpine3.22
-   container_name: some-postgres
-   environment:
-     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-   ports:
-     - "5433:5432"
-   volumes:
-     - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
-   restart: always
+  postgres:
+    image: postgres:15-alpine
+    container_name: some-postgres
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-1234} # ถ้าหาค่าไม่เจอให้ใช้ 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      # ฝั่งซ้าย (เครื่องคุณจิ๊บ) : ฝั่งขวา (ในโลกของ Docker)
+      - ./postgres_data:/var/lib/postgresql/data 
+    restart: always

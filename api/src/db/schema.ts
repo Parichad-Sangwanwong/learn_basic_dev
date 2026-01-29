@@ -23,4 +23,3 @@ export const postsTable = pgTable("posts", {
  content: text().notNull(),
  ...defaultTimestamps,
 });
-
