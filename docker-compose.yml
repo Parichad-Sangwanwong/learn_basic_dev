@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15.14-alpine3.22
+    container_name: some-postgres
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+    ports:
+      - "5433:5432"
+    volumes:
+      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
+    restart: always
